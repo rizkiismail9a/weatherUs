@@ -1,14 +1,14 @@
 <template>
   <header class="sticky top-0 bg-weather-secondary shadow-lg">
     <nav class="container flex flex-col sm:flex-row items-center gap-4 py-6 justify-between">
-      <router-link to="/">
+      <router-link to="/" title="Home">
         <div class="flex flex-1 items-center gap-3 text-white text-2xl">
           <i class="fa-solid fa-sun"></i>
           <p>Weather Us</p>
         </div>
       </router-link>
       <div class="flex gap-3 text-xl items-center">
-        <i class="fa-solid fa-circle-info hover:text-white duration-150 cursor-pointer" @click="modalToggle"></i>
+        <i class="fa-solid fa-circle-info hover:text-white duration-150 cursor-pointer" @click="modalToggle" title="how to use app"></i>
         <i class="fa-solid fa-plus text-white duration-150 cursor-pointer" @click="addToCollection"></i>
       </div>
       <BaseModal :isModalActive="modalActivate" @close-modal="modalToggle">

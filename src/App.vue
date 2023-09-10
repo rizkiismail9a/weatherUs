@@ -6,10 +6,12 @@
         <component :is="Component" />
       </Transition>
     </RouterView>
+    <FooterComponent class="flex-1" />
   </div>
 </template>
 
 <script setup>
+import FooterComponent from "./components/FooterComponent.vue";
 import SiteNavigation from "./components/SiteNavigation.vue";
 import { RouterView } from "vue-router";
 </script>
